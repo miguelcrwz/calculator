@@ -17,7 +17,7 @@
 <br>
 
 <p align = "center">
-  <img alt = "preview" src = "preview/kong.gif" width = "40%">
+  <img alt = "preview" src = "preview/logo.png" width = "50%">
 </p>
 
 ## 💻 <a id = "project"></a> PROJECT
