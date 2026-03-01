@@ -1,0 +1,11 @@
+# compiled binaries
+output/
+*.exe
+*.o
+*.obj
+*.out
+/calculator
+
+# editor folders
+.vscode/
+.idea/
