@@ -22,5 +22,10 @@ int main(void) {
         return 1;
     }
 
+    if (operation < 1 || operation > 4) {
+        printf("%sINVALID OPERATION, PLEASE CHOOSE BETWEEN 1 AND 4.\n%s", red, reset);
+        return 1;
+    }
+
     return 0;
 }
