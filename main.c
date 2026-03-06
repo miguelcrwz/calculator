@@ -46,6 +46,14 @@ int main(void) {
             result = num1 + num2;
             printf("%sRESULT: %.2lf\n%s", green, result, reset);
             break;
+        case 2:
+            result = num1 - num2;
+            printf("%sRESULT: %.2lf\n%s", green, result, reset);
+            break;
+        case 3:
+            result = num1 * num2;
+            printf("%sRESULT: %.2lf\n%s", green, result, reset);
+            break;
     }
 
     return 0;
