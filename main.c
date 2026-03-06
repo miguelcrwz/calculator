@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 int main(void) {
+    double num1, num2, result;
     int operation;
 
     char* reset = "\033[0m";  
     char* red = "\033[31m";     
     char* green = "\033[32m";   
     char* yellow = "\033[33m";  
+    char* magenta = "\033[35m"; 
 
     printf("WELCOME TO THE CALCULATOR! \n");
     
@@ -25,6 +27,25 @@ int main(void) {
     if (operation < 1 || operation > 4) {
         printf("%sINVALID OPERATION, PLEASE CHOOSE BETWEEN 1 AND 4.\n%s", red, reset);
         return 1;
+    }
+
+    printf("%s\nENTER THE FIRST NUMBER: %s", magenta, reset);
+    if (scanf("%lf", &num1) != 1) {
+        printf("%sINVALID INPUT, PLEASE ENTER A NUMBER.\n%s", red, reset);
+        return 1;
+    }
+
+    printf("%sENTER THE SECOND NUMBER: %s", magenta, reset);
+    if (scanf("%lf", &num2) != 1) {
+        printf("%sINVALID INPUT, PLEASE ENTER A NUMBER.\n%s", red, reset);
+        return 1;
+    }
+
+    switch (operation) {
+        case 1:
+            result = num1 + num2;
+            printf("%sRESULT: %.2lf\n%s", green, result, reset);
+            break;
     }
 
     return 0;
