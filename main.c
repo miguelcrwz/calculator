@@ -54,6 +54,14 @@ int main(void) {
             result = num1 * num2;
             printf("%sRESULT: %.2lf\n%s", green, result, reset);
             break;
+        case 4:
+            if (num2 != 0) {
+                result = num1 / num2;
+                printf("%sRESULT: %.2lf\n%s", green, result, reset);
+            } else {
+                printf("%sERROR! DIVISION BY ZERO IS NOT ALLOWED.\n%s", red, reset);
+            }
+            break;
     }
 
     return 0;
